@@ -1,4 +1,4 @@
-from functions import plus, minus
+from calculator import plus, minus
 import math
 from math import fsum as test_sum
 
