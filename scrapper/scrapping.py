@@ -10,7 +10,7 @@ pagination = indeed_soup.find("div", {"class": "pagination"})
 
 links = pagination.find_all('a')
 pages = []
-for link in links:
-    pages.append(link.string)
-pages = pages[:-1]
+for link in links[:-1]:
+    pages.append(int(link.string))
+# pages = pages[:-1]
 print(pages)
