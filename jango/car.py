@@ -3,14 +3,13 @@ class Car():
     doors = 4
     windows = 4
     seats = 4
+# class 안에 있는 def(function)을 method라고 부른다.
+
+    def start(potato):
+        print(potato.color)
+        print("start")
 
 
 porche = Car()
 porche.color = "Red"
-print(porche, porche.windows, porche.color)
-
-ferrari = Car()
-ferrari.color = "White"
-
-mini = Car()
-mini.color = "Black"
+porche.start()
